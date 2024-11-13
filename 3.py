@@ -8,6 +8,10 @@ def input_validation(number):
         if base < 2 or base > 16:
             print("Invalid base, try again")
             return False
+        another = int(valid[0])
+        if base == 2 and another > 1:
+            print("Invalid base, try again")
+            return False
     elif not number.isdigit():
         print("Invalid input, try again")
         return False
